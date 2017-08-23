@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Где я учился</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+</head>
+<body>
+
+    <header class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Страница Остапа Бендера</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Главная</a></li>
+                    <li class="active"><a href="/study">Учёба</a></li>
+                    <li><a href="/work">Работа</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="row row-centered">
+                    <div class="col-sm-4">
+                        <img src="{% static "img/avatarOstapBender.jpeg" %}" class = "img-thumbnail" alt="Остап Бендер" width="350px" height="350px">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h1>{{ person.name }}</h1>
+                        <h2>Моя учёба</h2>
+                        <div class="well">
+                            <p>{{ person.study }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
