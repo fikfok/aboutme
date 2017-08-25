@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <title>
         {% block title %}
-         eeeeeeeeeeee
         {% endblock %}
     </title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css">
@@ -30,9 +29,10 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/">Главная</a></li>
-                    <li><a href="/study">Учёба</a></li>
-                    <li><a href="/work">Работа</a></li>
+                    <li {% if current_page == "home" %}class="active"{% endif %}><a href="/">Главная</a></li>
+                    <li {% if current_page == "study" %}class="active"{% endif %}><a href="/study">Учёба</a></li>
+                    <li {% if current_page == "work" %}class="active"{% endif %}><a href="/work">Работа</a></li>
+                    <li {% if current_page == "quotes" %}class="active"{% endif %}><a href="/quotes">Мои крылатые фразы</a></li>
                 </ul>
             </div>
 
@@ -43,11 +43,11 @@
         <section>
             <div class="container">
                 <div class="row row-centered">
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <img src="{% static "img/avatarOstapBender.jpeg" %}" class = "img-thumbnail" alt="Остап Бендер" width="350px" height="350px">
                     </div>
 
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
                         <h1>{{ person.name }}</h1>
                         {% block content %}
                         {% endblock %}
@@ -56,5 +56,13 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="row row-centered text-center">
+            <div class="col-md-12">
+                <a href="https://ru.wikipedia.org/wiki/%D0%9E%D1%81%D1%82%D0%B0%D0%BF_%D0%91%D0%B5%D0%BD%D0%B4%D0%B5%D1%80"><cite>По материалам wikipedia</cite></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

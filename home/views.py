@@ -17,12 +17,16 @@ class Person():
 
 def home(request):
     person = Person()
-    return render_to_response('home.html', {'person': person})
+    return render_to_response('home.html', {'person': person, 'current_page': 'home'})
 
 def study(request):
     person = Person()
-    return render_to_response('study.html',  {'person': person})
+    return render_to_response('study.html',  {'person': person, 'current_page': 'study'})
 
 def work(request):
     person = Person()
-    return render_to_response('work.html',  {'person': person})
+    return render_to_response('work.html',  {'person': person, 'current_page': 'work'})
+
+def quotes(request):
+    person = Person()
+    return render_to_response('quotes.html',  {'person': person, 'current_page': 'quotes'})

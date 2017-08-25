@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^$', home),
     url(r'^study/$', study),
     url(r'^work/$', work),
+    url(r'^quotes/$', quotes),
 ]
