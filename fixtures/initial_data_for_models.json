@@ -1,0 +1,166 @@
+[
+  {
+    "model": "home.work",
+    "pk": 1,
+    "fields": {
+      "chairNumber": "1",
+      "cityName": "Старгород",
+      "description": "Особняк, ныне «2-й дом соцобеса». Стул был продан отцу Фёдору, Воробьянинов на улице сталкивается с ним и в драке стул ломается.",
+      "personages": "Отец Фёдор, Ипполит Воробьянинов",
+      "result": "False"
+    }
+  },
+  {
+    "model": "home.work",
+    "pk": 2,
+    "fields": {
+      "chairNumber": "2",
+      "cityName": "Старгород",
+      "description": "После свадьбы на вдове Грицацуевой в первую же брачную ночь уходит от неё прихватив стул.",
+      "personages": "Остап Бендер, Ипполит Воробьянинов, вдова Грицацуева",
+      "result": "False"
+    }
+  },
+  {
+    "model": "home.work",
+    "pk": 3,
+    "fields": {
+      "chairNumber": "3",
+      "cityName": "Москва",
+      "description": "Бендре у Элочки-людоедочки, жены инженера Щукина, меняет стул на ситечко, украденное у мадам Грицацуевой.",
+      "personages": "Остап Бендер, Элочка-людоедочка",
+      "result": "False"
+    }
+  },
+  {
+    "model": "home.work",
+    "pk": 4,
+    "fields": {
+      "chairNumber": "4",
+      "cityName": "Москва",
+      "description": "Инженер Щукин отдаёт стул Бендеру в благодарность за то, что он открыл захлопнувшуюся дверь.",
+      "personages": "Остап Бендер, инженер Щукин",
+      "result": "False"
+    }
+  },
+  {
+    "model": "home.work",
+    "pk": 5,
+    "fields": {
+      "chairNumber": "5",
+      "cityName": "Москва",
+      "description": "Бендер, выдав себя за судебного исполнителя, забирает стул за долги у рифмоплёта Авессалома Владимировича Изнурёнкова",
+      "personages": "Остап Бендер, Авессалом Владимирович Изнурёнков",
+      "result": "False"
+    }
+  },
+  {
+    "model": "home.work",
+    "pk": 6,
+    "fields": {
+      "chairNumber": "6",
+      "cityName": "Москва",
+      "description": "Бендер находит стул в кабинете редактора газеты 'Станок'",
+      "personages": "Остап Бендер, редактор газеты 'Станок'",
+      "result": "False"
+    }
+  },
+  {
+    "model": "home.work",
+    "pk": 7,
+    "fields": {
+      "chairNumber": "7",
+      "cityName": "Москва",
+      "description": "Остап проникает в комнату Никифора Ляписа-Трубецкого и вскрывает стул.",
+      "personages": "Остап Бендер, Никифор Ляпис-Трубецкой",
+      "result": "False"
+    }
+  },
+  {
+    "model": "home.work",
+    "pk": 8,
+    "fields": {
+      "chairNumber": "8",
+      "cityName": "По пути в Васюки",
+      "description": "Бендер крадёт стул на пароходе «Скрябин» из каюты режиссёра.",
+      "personages": "Остап Бендер, Ипполит Воробьянинов, режиссёр театра «Колумб»",
+      "result": "False"
+    }
+  },
+  {
+    "model": "home.work",
+    "pk": 9,
+    "fields": {
+      "chairNumber": "9",
+      "cityName": "Пятигорск",
+      "description": "Остап вступает в сговор с монтёр Мечниковым для кражи стула театра «Колумб».",
+      "personages": "Остап Бендер, Ипполит Воробьянинов, монтёр Мечников",
+      "result": "False"
+    }
+  },
+  {
+    "model": "home.work",
+    "pk": 10,
+    "fields": {
+      "chairNumber": "10",
+      "cityName": "Пятигорск",
+      "description": "Остап вступает в сговор с монтёр Мечниковым для кражи стула театра «Колумб».",
+      "personages": "Остап Бендер, Ипполит Воробьянинов, монтёр Мечников",
+      "result": "False"
+    }
+  },
+  {
+    "model": "home.work",
+    "pk": 11,
+    "fields": {
+      "chairNumber": "11",
+      "cityName": "Ялта",
+      "description": "Бендер и Воробьянинов похищают стул в театре Колумба после спектакля.",
+      "personages": "Остап Бендер, Ипполит Воробьянинов",
+      "result": "False"
+    }
+  },
+  {
+    "model": "home.work",
+    "pk": 12,
+    "fields": {
+      "chairNumber": "12",
+      "cityName": "Москва",
+      "description": "Товарный двор Октябрьского вокзала. Сторож случайно находит драгоценности.",
+      "personages": "Сторож Октябрского вокзала",
+      "result": "True"
+    }
+  },
+  {
+    "model": "home.quotes",
+    "pk": 1,
+    "fields": {
+      "title": "Ну что, отец, невесты в вашем городе есть",
+      "link": "<iframe width=\"491\" height=\"276\" src=\"https://www.youtube.com/embed/s713ZJ9Xmoc?start=12&end=18\" frameborder=\"0\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "model": "home.quotes",
+    "pk": 2,
+    "fields": {
+      "title": "Отец русской демократии",
+      "link": "<iframe width=\"491\" height=\"276\" src=\"https://www.youtube.com/embed/s713ZJ9Xmoc?start=151&end=158\" frameborder=\"0\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "model": "home.quotes",
+    "pk": 3,
+    "fields": {
+      "title": "Киса, я давно хотел вас спросить",
+      "link": "<iframe width=\"491\" height=\"276\" src=\"https://www.youtube.com/embed/s713ZJ9Xmoc?start=379&end=394\" frameborder=\"0\" allowfullscreen></iframe>"
+    }
+  },
+  {
+    "model": "home.quotes",
+    "pk": 4,
+    "fields": {
+      "title": "Утром деньги, вечером стулья",
+      "link": "<iframe width=\"491\" height=\"276\" src=\"https://www.youtube.com/embed/s713ZJ9Xmoc?start=475&end=480\" frameborder=\"0\" allowfullscreen></iframe>"
+    }
+  }
+]

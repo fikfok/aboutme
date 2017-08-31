@@ -6,46 +6,20 @@
 
 {% block content %}
     <h2>Мои крылатые фразы</h2>
-
+    {% for item in quotes %}
       <div class="panel panel-default">
         <div class="panel-heading">
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#quote_1">Ну что, отец, невесты в вашем городе есть</a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#quote_{{ forloop.counter }}">{{ item.title }}</a>
           </h4>
         </div>
-        <div id="quote_1" class="panel-collapse collapse">
+        <div id="quote_{{ forloop.counter }}" class="panel-collapse collapse">
           <div class="panel-body">
-            <iframe width="491" height="276" src="https://www.youtube.com/embed/s713ZJ9Xmoc?start=12&end=18" frameborder="0" allowfullscreen></iframe>
+            {{ item.link|safe }}
           </div>
         </div>
       </div>
-
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#quote_2">Отец русской демократии</a>
-          </h4>
-        </div>
-        <div id="quote_2" class="panel-collapse collapse">
-          <div class="panel-body">
-              <iframe width="491" height="276" src="https://www.youtube.com/embed/s713ZJ9Xmoc?start=151&end=158" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#quote_3">Киса, я давно хотел вас спросить</a>
-          </h4>
-        </div>
-        <div id="quote_3" class="panel-collapse collapse">
-          <div class="panel-body">
-              <iframe width="491" height="276" src="https://www.youtube.com/embed/s713ZJ9Xmoc?start=379&end=394" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    {#            {% for item in person.quotes %}#}
-{##}
-{#            {% endfor %}#}
+    {% empty %}
+        <p>Пок ни одной крылатой фразы не добавлено</p>
+    {% endfor %}
 {% endblock %}

@@ -29,10 +29,10 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li {% if current_page == "home" %}class="active"{% endif %}><a href="/">Главная</a></li>
-                    <li {% if current_page == "study" %}class="active"{% endif %}><a href="/study">Учёба</a></li>
-                    <li {% if current_page == "work" %}class="active"{% endif %}><a href="/work">Работа</a></li>
-                    <li {% if current_page == "quotes" %}class="active"{% endif %}><a href="/quotes">Мои крылатые фразы</a></li>
+                    <li {% if current_page == "home" %}class="active"{% endif %}><a href="{% url 'home' %}">Главная</a></li>
+                    <li {% if current_page == "study" %}class="active"{% endif %}><a href="{% url 'study' %}">Учёба</a></li>
+                    <li {% if current_page == "work" %}class="active"{% endif %}><a href="{% url 'work' %}">Работа</a></li>
+                    <li {% if current_page == "quotes" %}class="active"{% endif %}><a href="{% url 'qoutes' %}">Видеоцитаты</a></li>
                 </ul>
             </div>
 

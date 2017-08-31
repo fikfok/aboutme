@@ -8,7 +8,7 @@
     <h2>Немного обо мне</h2>
     <div class="well">
         <p><strong class="definition">Полное имя:</strong> {{ person.fullName }}</p>
-        <p><strong class="definition">Дата рождения:</strong> {{ person.birthday }}</p>
+        <p><strong class="definition">Дата рождения:</strong> {{ person.birthday|date:"d.m.Y" }}</p>
         <p><strong class="definition">Хобби:</strong> {{ person.hobby }}</p>
     </div>
 {% endblock %}

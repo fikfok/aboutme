@@ -5,17 +5,17 @@
 {% endblock %}
 
 {% block content %}
-    <h2>Мои проекты</h2>
+    <h2>История погони за стульями в кратком перессказе</h2>
     <div class="well">
-        <ul>
-            {% for item in person.work %}
-                {% if forloop.first %}
-                    <p class="paragraph-header">{{ item }}</p>
-                {% else %}
-                    <li>{{ item }}</li>
-                {% endif %}
+        {% if works|length == 0 %}
+            Пока ни одного проекта в моё резюме не добавлено
+        {% else %}
+            {% for item in works %}
+                <p class="chair-number">{{ item.chairNumber }} стул. {{ item.cityName }}</p>
+                <p class="event-description">{{ item.description }}</p>
+                <p class="personages"><span class="title">Действующие лица:</span> {{ item.personages }}</p>
+                <p class="event-result"><span class="title">Результат поисков:</span> сокровища {%  if item.result %}найдены{% else %}не найдены{% endif %}</p>
             {% endfor %}
-        </ul>
-
+        {% endif %}
     </div>
 {% endblock %}
