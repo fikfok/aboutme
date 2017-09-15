@@ -44,9 +44,8 @@
             <div class="container">
                 <div class="row row-centered">
                     <div class="col-md-4">
-                        <img src="{% static "img/avatarOstapBender.jpeg" %}" class = "img-thumbnail" alt="Остап Бендер" width="350px" height="350px">
+                        <img src="{% if current_page != "city" %}{% static "img/avatarOstapBender.jpeg" %}{% else %}{% static city.photo %}{% endif %}" class = "img-thumbnail" alt="Остап Бендер" width="350px" height="350px">
                     </div>
-
                     <div class="col-md-6">
                         <h1>{{ person.name }}</h1>
                         {% block content %}

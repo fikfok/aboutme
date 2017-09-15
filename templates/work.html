@@ -11,10 +11,14 @@
             Пока ни одного проекта в моё резюме не добавлено
         {% else %}
             {% for item in works %}
-                <p class="chair-number">{{ item.chairNumber }} стул. {{ item.cityName }}</p>
-                <p class="event-description">{{ item.description }}</p>
-                <p class="personages"><span class="title">Действующие лица:</span> {{ item.personages }}</p>
-                <p class="event-result"><span class="title">Результат поисков:</span> сокровища {%  if item.result %}найдены{% else %}не найдены{% endif %}</p>
+                <p class="chair-number">{{ item.single_work.chairNumber }} стул. <a href="{% url 'cities' cityID=item.single_work.cityName.id %}">{{ item.single_work.cityName.cityName }}</a></p>
+                <p class="event-description">{{ item.single_work.description }}</p>
+                <p class="personages"><span class="title">Действующие лица:</span>
+                    {% for personage in item.personages %}
+                        {{ personage }}{% if not forloop.last %},{% endif %}
+                    {% endfor %}
+                </p>
+                <p class="event-result"><span class="title">Результат поисков:</span> сокровища {%  if item.single_work.result %}НАЙДЕНЫ!!!{% else %}не найдены{% endif %}</p>
             {% endfor %}
         {% endif %}
     </div>

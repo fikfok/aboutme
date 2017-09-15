@@ -23,4 +23,6 @@ urlpatterns = [
     url(r'^study/$', study, name = 'study'),
     url(r'^work/$', work, name = 'work'),
     url(r'^quotes/$', quotes, name = 'qoutes'),
+    url(r'^work/cities/(?P<cityID>\d{1,4})$', cities, name = 'cities'),
+
 ]

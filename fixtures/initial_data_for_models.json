@@ -1,12 +1,147 @@
 [
   {
+    "model": "home.cities",
+    "pk": 1,
+    "fields": {
+      "cityName": "Старгород"
+    }
+  },
+  {
+    "model": "home.cities",
+    "pk": 2,
+    "fields": {
+      "cityName": "Москва"
+    }
+  },
+  {
+    "model": "home.cities",
+    "pk": 3,
+    "fields": {
+      "cityName": "По пути в Васюки"
+    }
+  },
+  {
+    "model": "home.cities",
+    "pk": 4,
+    "fields": {
+      "cityName": "Пятигорск"
+    }
+  },
+  {
+    "model": "home.cities",
+    "pk": 5,
+    "fields": {
+      "cityName": "Ялта"
+    }
+  },
+
+  {
+    "model": "home.personages",
+    "pk": 1,
+    "fields": {
+      "firstName": "Авессалом",
+      "secondName": "Владимирович Изнурёнков"
+    }
+  },
+  {
+    "model": "home.personages",
+    "pk": 2,
+    "fields": {
+      "firstName": "вдова",
+      "secondName": "Грицацуева"
+    }
+  },
+  {
+    "model": "home.personages",
+    "pk": 3,
+    "fields": {
+      "firstName": "инженер",
+      "secondName": "Щукин"
+    }
+  },
+  {
+    "model": "home.personages",
+    "pk": 4,
+    "fields": {
+      "firstName": "Ипполит",
+      "secondName": "Воробьянинов"
+    }
+  },
+  {
+    "model": "home.personages",
+    "pk": 5,
+    "fields": {
+      "firstName": "монтёр",
+      "secondName": "Мечников"
+    }
+  },
+  {
+    "model": "home.personages",
+    "pk": 6,
+    "fields": {
+      "firstName": "Никифор",
+      "secondName": "Ляпис-Трубецкой"
+    }
+  },
+  {
+    "model": "home.personages",
+    "pk": 7,
+    "fields": {
+      "firstName": "Остап",
+      "secondName": "Бендер"
+    }
+  },
+  {
+    "model": "home.personages",
+    "pk": 8,
+    "fields": {
+      "firstName": "Отец",
+      "secondName": "Фёдор"
+    }
+  },
+  {
+    "model": "home.personages",
+    "pk": 9,
+    "fields": {
+      "firstName": "редактор газеты",
+      "secondName": "«Станок»"
+    }
+  },
+  {
+    "model": "home.personages",
+    "pk": 10,
+    "fields": {
+      "firstName": "режиссёр театра",
+      "secondName": "«Колумб»"
+    }
+  },
+  {
+    "model": "home.personages",
+    "pk": 11,
+    "fields": {
+      "firstName": "Сторож",
+      "secondName": "Октябрского вокзала"
+    }
+  },
+  {
+    "model": "home.personages",
+    "pk": 12,
+    "fields": {
+      "firstName": "Элочка",
+      "secondName": "Людоедочка"
+    }
+  },
+
+
+
+  {
     "model": "home.work",
     "pk": 1,
     "fields": {
       "chairNumber": "1",
-      "cityName": "Старгород",
+      "cityName_id": "1",
       "description": "Особняк, ныне «2-й дом соцобеса». Стул был продан отцу Фёдору, Воробьянинов на улице сталкивается с ним и в драке стул ломается.",
-      "personages": "Отец Фёдор, Ипполит Воробьянинов",
+      "personages": ["4", "8"],
       "result": "False"
     }
   },
@@ -15,9 +150,9 @@
     "pk": 2,
     "fields": {
       "chairNumber": "2",
-      "cityName": "Старгород",
+      "cityName_id": "1",
       "description": "После свадьбы на вдове Грицацуевой в первую же брачную ночь уходит от неё прихватив стул.",
-      "personages": "Остап Бендер, Ипполит Воробьянинов, вдова Грицацуева",
+      "personages": ["2", "4", "7"],
       "result": "False"
     }
   },
@@ -26,9 +161,9 @@
     "pk": 3,
     "fields": {
       "chairNumber": "3",
-      "cityName": "Москва",
+      "cityName_id": "2",
       "description": "Бендре у Элочки-людоедочки, жены инженера Щукина, меняет стул на ситечко, украденное у мадам Грицацуевой.",
-      "personages": "Остап Бендер, Элочка-людоедочка",
+      "personages": ["7", "12"],
       "result": "False"
     }
   },
@@ -37,9 +172,9 @@
     "pk": 4,
     "fields": {
       "chairNumber": "4",
-      "cityName": "Москва",
+      "cityName_id": "2",
       "description": "Инженер Щукин отдаёт стул Бендеру в благодарность за то, что он открыл захлопнувшуюся дверь.",
-      "personages": "Остап Бендер, инженер Щукин",
+      "personages": ["3", "7"],
       "result": "False"
     }
   },
@@ -48,9 +183,9 @@
     "pk": 5,
     "fields": {
       "chairNumber": "5",
-      "cityName": "Москва",
+      "cityName_id": "2",
       "description": "Бендер, выдав себя за судебного исполнителя, забирает стул за долги у рифмоплёта Авессалома Владимировича Изнурёнкова",
-      "personages": "Остап Бендер, Авессалом Владимирович Изнурёнков",
+      "personages": ["1", "7"],
       "result": "False"
     }
   },
@@ -59,9 +194,9 @@
     "pk": 6,
     "fields": {
       "chairNumber": "6",
-      "cityName": "Москва",
+      "cityName_id": "2",
       "description": "Бендер находит стул в кабинете редактора газеты 'Станок'",
-      "personages": "Остап Бендер, редактор газеты 'Станок'",
+      "personages": ["7", "9"],
       "result": "False"
     }
   },
@@ -70,9 +205,9 @@
     "pk": 7,
     "fields": {
       "chairNumber": "7",
-      "cityName": "Москва",
+      "cityName_id": "2",
       "description": "Остап проникает в комнату Никифора Ляписа-Трубецкого и вскрывает стул.",
-      "personages": "Остап Бендер, Никифор Ляпис-Трубецкой",
+      "personages": ["6", "7"],
       "result": "False"
     }
   },
@@ -81,9 +216,9 @@
     "pk": 8,
     "fields": {
       "chairNumber": "8",
-      "cityName": "По пути в Васюки",
+      "cityName_id": "3",
       "description": "Бендер крадёт стул на пароходе «Скрябин» из каюты режиссёра.",
-      "personages": "Остап Бендер, Ипполит Воробьянинов, режиссёр театра «Колумб»",
+      "personages": ["4", "7", "10"],
       "result": "False"
     }
   },
@@ -92,9 +227,9 @@
     "pk": 9,
     "fields": {
       "chairNumber": "9",
-      "cityName": "Пятигорск",
+      "cityName_id": "4",
       "description": "Остап вступает в сговор с монтёр Мечниковым для кражи стула театра «Колумб».",
-      "personages": "Остап Бендер, Ипполит Воробьянинов, монтёр Мечников",
+      "personages": ["4", "5", "7"],
       "result": "False"
     }
   },
@@ -103,9 +238,9 @@
     "pk": 10,
     "fields": {
       "chairNumber": "10",
-      "cityName": "Пятигорск",
+      "cityName_id": "4",
       "description": "Остап вступает в сговор с монтёр Мечниковым для кражи стула театра «Колумб».",
-      "personages": "Остап Бендер, Ипполит Воробьянинов, монтёр Мечников",
+      "personages": ["4", "5", "7"],
       "result": "False"
     }
   },
@@ -114,9 +249,9 @@
     "pk": 11,
     "fields": {
       "chairNumber": "11",
-      "cityName": "Ялта",
+      "cityName_id": "5",
       "description": "Бендер и Воробьянинов похищают стул в театре Колумба после спектакля.",
-      "personages": "Остап Бендер, Ипполит Воробьянинов",
+      "personages": ["4", "7"],
       "result": "False"
     }
   },
@@ -125,12 +260,13 @@
     "pk": 12,
     "fields": {
       "chairNumber": "12",
-      "cityName": "Москва",
+      "cityName_id": "2",
       "description": "Товарный двор Октябрьского вокзала. Сторож случайно находит драгоценности.",
-      "personages": "Сторож Октябрского вокзала",
+      "personages": ["11"],
       "result": "True"
     }
   },
+
   {
     "model": "home.quotes",
     "pk": 1,

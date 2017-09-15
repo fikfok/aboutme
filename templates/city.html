@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ city.cityName }}
+{% endblock %}
+
+{% block content %}
+    <h2>{{ city.cityName }}</h2>
+    <div class="well">
+        <p>{{ city.description }}</p>
+    </div>
+{% endblock %}
